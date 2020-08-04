@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import {parseScript as parse} from 'shift-parser';
 import {refactor} from 'shift-refactor';
-import unsafeMethods from '../src/';
+import {unsafeMethods} from '../src/';
 
 describe('plugin-unsafe', () => {
   describe('massRename', () => {

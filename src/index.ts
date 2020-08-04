@@ -14,7 +14,7 @@ declare module 'shift-refactor' {
   interface RefactorSessionChainable extends ReturnType<typeof unsafeMethods> {}
 }
 
-export default function unsafeMethods() {
+export function unsafeMethods() {
   return {
     findPureFunctionCandidates(
       this: RefactorSessionChainable,
