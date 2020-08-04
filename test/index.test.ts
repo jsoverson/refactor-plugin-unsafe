@@ -13,7 +13,7 @@ describe('plugin-unsafe', () => {
         ['b', 'b1'],
         ['c', 'c1'],
       ]);
-      expect($script.first()).to.deep.equal(parse('var a1 = 2; b1 = 3; function d(a1) {let c1 = a1;}'));
+      expect($script.raw()).to.deep.equal(parse('var a1 = 2; b1 = 3; function d(a1) {let c1 = a1;}'));
     });
   });
 
